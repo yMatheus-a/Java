@@ -1,0 +1,25 @@
+package aeso;
+
+import java.util.Scanner;
+import java.util.Locale;
+
+public class aula {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("digite seu nome: ");
+        String SeuNome = sc.nextLine();
+        System.out.println("digite sua idade: ");
+        int Idade = sc.nextInt();
+        System.out.println("digite sua primeira nota: ");
+        double nota1 = sc.nextDouble();
+        System.out.println("digite sua segunda nota: ");
+        double nota2 = sc.nextDouble();
+
+        double media;
+        media = (nota1+nota2)/2;
+        
+        System.out.println("Nome: " + SeuNome );
+        System.out.println("Média:" + media );
+    }
+}
