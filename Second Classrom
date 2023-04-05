@@ -1,0 +1,93 @@
+package aeso;
+
+
+import java.util.Scanner;
+
+
+public class pessoa {
+ 
+    String nome;
+    String cpf;
+
+
+    pessoa(){
+
+
+ 
+}
+
+pessoa(String nome, String cpf){
+    this.nome = nome;
+    this.cpf = cpf;
+
+
+}
+}
+
+package aeso;
+
+
+import java.util.Scanner;
+
+
+public class Aluno {
+ 
+    public static void main(String[] args) {
+        pessoa pes = new pessoa();
+      Scanner sc = new Scanner(System.in);
+   
+      System.out.println("Informe seu nome:");
+      pes.nome = sc.nextLine();
+
+
+      System.out.println("Informe seu cpf:");
+      pes.cpf = sc.nextLine();
+
+
+      System.out.println("Digite se você é aluno 1 \ndigite 0 se não for: ");
+
+
+      int conf = sc.nextInt();
+
+
+      if (conf == 1){
+          System.out.println("Você é aluno");
+      } else {
+            System.out.println("Você não é aluno");
+      }
+  }
+}
+
+package aeso;
+
+
+import java.util.Scanner;
+
+
+public class professor {
+ 
+    public static void main(String[] args) {
+        pessoa pes = new pessoa();
+      Scanner sc = new Scanner(System.in);
+   
+      System.out.println("Informe seu nome:");
+      pes.nome = sc.nextLine();
+
+
+      System.out.println("Informe seu cpf:");
+      pes.cpf = sc.nextLine();
+
+
+      System.out.println("Digite se você é professor 1 \ndigite 0 se não for: ");
+
+
+      int conf = sc.nextInt();
+
+
+      if (conf == 1){
+          System.out.println("Você é professor");
+      } else {
+            System.out.println("Você não é professor");
+      }
+  }
+}
